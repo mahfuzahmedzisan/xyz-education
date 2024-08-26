@@ -1,6 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 :root{
     --bg-color: #1a0000;
     --primary-color: #ff8000;
-    --secondary-color: #006666;
+    --secondary-color: #994d00;
     --text-color: #00ffff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    /* transition: all 0.3s linear; */
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.btn a{
+    padding: 10px 20px;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    color: var(--primary-color);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.btn a:hover{
+    color: #00ffff;
+    background-color: var(--primary-color);
+}
+
+.tittle{
+    text-align: center;
+    padding: 20px 0 30px;
+}
+
+.tittle h2{
+    font-size: 30px;
+    text-transform: capitalize;
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    display: inline-block;
+}
+
+.card{
+    width: 30%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.card:hover{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+/* Header Section  */
+.header{
+    padding: 10px 0;
+    background-color: #000000cc;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h2{
+    font-size: 30px;
+    color: var(--primary-color);
+}
+
+.logo h2:hover{
+    color: var(--text-color);
+}
+
+.menu{
+    display: flex;
+    gap: 10px;
+}
+
+.list-item a{
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.list-item a:hover{
+    color: var(--text-color);
+}
+
+/* Banner Section  */
+.banner-section{
+    background-image: url('img/banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 250px 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.banner-content h2{
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--primary-color);
+    letter-spacing: .5px;
+    text-transform: capitalize;
+}
+
+.banner-content p{
+    font-size: 18px;
+    color: var(--bg-color);
+    font-weight: 500;
+    line-height: 28px;
+    padding: 10px 0;
+}
+
+/* Course Secton  */
+.course-section{
+    padding: 50px 0;
+}
+
+.course-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.course-content .card h2{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--secondary-color);
+    text-transform: capitalize;
+    line-height: 40px;
+}
+
+.course-content .card p{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--bg-color);
+    line-height: 24px;
+}
+
+.course-content .card .buy{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.course-content .card .buy p{
+    color: var(--secondary-color);
+}
+
+/* Feedback Secton  */
+.feedback-section{
+    padding: 50px 0;
+}
+
+.feedback-content{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.feedback-content .card img{
+    border-radius: 50%;
+}
+
+.client-details{
+    font-size: 14px;
+    color: var(--bg-color);
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: .5px;
+    padding: 10px 0;
+}
+
+.client-ratting i{
+    color: var(--primary-color);
+    letter-spacing: 10px;
+    font-size: 18px;
+}
+
+.client-name{
+    font-size: 18px;
+    padding: 10px 0;
+    font-weight: 600;
+    color: var(--secondary-color);
+    text-transform: capitalize;
+}
+
+.client-proffession{
+    font-size: 14px;
+    text-transform: capitalize;
+    color: var(--secondary-color);
+}
+
+/* Footer Section  */
+
+footer{
+    text-align: center;
+    padding: 20px 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    text-transform: capitalize;
 }
