@@ -502,13 +502,58 @@ form input::placeholder{
     color: var(--text-color);
 }
 
+/* Contact Page End Here  */
 
 
+/* FAQ / Accordions Page Start Here */
 
+.accordions-section{
+    min-height: 100vh;
+    padding: 7rem 0 50px;
+}
 
+.accordions-content{
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 
+.accordions-content .card{
+    width: 100%;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
 
+.accordions-content .card:hover{
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
 
+.accordions-content .question{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    align-items: center;
+    cursor: pointer;
+}
+
+.accordions-content .question h2{
+    font-size: 20px;
+    font-family: 500;
+    letter-spacing: .5px;
+    color: var(--secondary-color);
+}
+.accordions-content .question i{
+    font-size: 20px;
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    color: var(--secondary-color);
+    border-radius: 5px;
+}
+
+.accordions-content .question i:hover{
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
 
 
 
