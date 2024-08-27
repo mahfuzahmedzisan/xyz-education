@@ -478,14 +478,13 @@ form input::placeholder{
     width: 100%;
 }
 
-.student-parents-contact{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 10px 0;
+.parents-contact{
+    padding-top:20px;
 }
 
-.student-parents-contact .parents-name input{
-    width: 80%;
+.student-parents-contact{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .reset-submit{
